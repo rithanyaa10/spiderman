@@ -3,219 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <style>
-        /* Reset and basic styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        h1, h2, h3 {
-            color: #333;
-        }
-
-        /* Header styles */
-        header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Navigation styles */
-        nav {
-            text-align: center;
-            background: #444;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1rem;
-        }
-
-        nav a:hover {
-            color: #ff6600;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* About Me */
-        #about {
-            background-color: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Skills */
-        #skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .skill {
-            background: #fff;
-            border-radius: 8px;
-            padding: 20px;
-            flex: 1;
-            min-width: 250px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Projects */
-        #projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .project {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        .project img {
-            width: 100%;
-            height: auto;
-        }
-
-        .project-info {
-            padding: 20px;
-        }
-
-        .project-info h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .project-info p {
-            margin-bottom: 10px;
-        }
-
-        .project-info a {
-            color: #ff6600;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Contact */
-        #contact {
-            text-align: center;
-            background: #333;
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        #contact p {
-            margin-bottom: 15px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-            margin-top: 40px;
-        }
-
-    </style>
+    <title>My Portfolio</title>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333;">
 
-    <header>
-        <h1>Your Name</h1>
-        <p>Web Developer | Designer | Creator</p>
+    <!-- Header Section -->
+    <header style="background-color: #333; color: white; padding: 20px 0; text-align: center;">
+        <h1 style="margin: 0; font-size: 2.5rem;">My Portfolio</h1>
+        <nav>
+            <ul style="list-style: none; padding: 0; margin-top: 20px;">
+                <li style="display: inline; margin-right: 15px;">
+                    <a href="#about" style="color: white; text-decoration: none; font-size: 1.1rem;">About</a>
+                </li>
+                <li style="display: inline; margin-right: 15px;">
+                    <a href="#work" style="color: white; text-decoration: none; font-size: 1.1rem;">My Work</a>
+                </li>
+                <li style="display: inline; margin-right: 15px;">
+                    <a href="#contact" style="color: white; text-decoration: none; font-size: 1.1rem;">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello, I'm Rithanyaa K, a passionate web developer based in [Your Location]. I specialize in creating user-friendly, responsive websites and applications. I have a strong background in both frontend and backend development, and I love experimenting with new technologies to build creative solutions. Whether working on a personal project or collaborating with a team, I strive to deliver the best results and enhance user experience.</p>
+    <!-- About Section -->
+    <section id="about" style="background-color: white; padding: 50px 20px; text-align: center;">
+        <h2 style="font-size: 2rem; margin-bottom: 20px;">About Me</h2>
+        <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+            Hello! I'm a web developer with a passion for creating clean, responsive websites. I specialize in front-end development and have experience with HTML, CSS, JavaScript, and more. I am always learning and experimenting with new technologies.
+        </p>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill">
-            <h3>HTML & CSS</h3>
-            <p>Proficient in building responsive layouts, semantic HTML, and custom styles using CSS.</p>
-        </div>
-        <div class="skill">
-            <h3>JavaScript</h3>
-            <p>Experienced in JavaScript for both frontend interactivity and backend Node.js development.</p>
-        </div>
-        <div class="skill">
-            <h3>React & Vue</h3>
-            <p>Building interactive UIs with React and Vue.js to create modern web applications.</p>
-        </div>
-        <div class="skill">
-            <h3>Node.js & Express</h3>
-            <p>Backend development with Node.js, Express, and MongoDB to create scalable web applications.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="https://www.shutterstock.com/shutterstock/photos/2300812275/display_1500/stock-photo-businessman-works-on-laptop-showing-business-analytics-dashboard-with-charts-metrics-and-kpi-to-2300812275.jpg" alt="Project 1">
-            <div class="project-info">
-                <h3>Project Title 1</h3>
-                <p>A brief description of what this project is about. It could be a website, app, or tool you built.</p>
-                <a href="#">View Project</a>
+    <!-- My Work Section -->
+    <section id="work" style="background-color: #f9f9f9; padding: 50px 20px;">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 40px;">My Work</h2>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div style="background-color: white; padding: 20px; margin: 15px; width: 280px; text-align: center; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                <img src="https://via.placeholder.com/300" alt="Project 1" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Project 1</h3>
+                <p style="font-size: 1rem;">A brief description of the project.</p>
+            </div>
+            <div style="background-color: white; padding: 20px; margin: 15px; width: 280px; text-align: center; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                <img src="https://via.placeholder.com/300" alt="Project 2" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Project 2</h3>
+                <p style="font-size: 1rem;">A brief description of the project.</p>
+            </div>
+            <div style="background-color: white; padding: 20px; margin: 15px; width: 280px; text-align: center; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                <img src="https://via.placeholder.com/300" alt="Project 3" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Project 3</h3>
+                <p style="font-size: 1rem;">A brief description of the project.</p>
             </div>
         </div>
-        <div class="project">
-            <img src="https://via.placeholder.com/600x400" alt="Project 2">
-            <div class="project-info">
-                <h3>Project Title 2</h3>
-                <p>A brief description of another project you've worked on. Highlight key features or technologies used.</p>
-                <a href="#">View Project</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: white; padding: 50px 20px; text-align: center;">
+        <h2 style="font-size: 2rem; margin-bottom: 20px;">Contact Me</h2>
+        <form action="#" method="post" style="max-width: 600px; margin: 0 auto;">
+            <div style="margin-bottom: 20px; text-align: left;">
+                <label for="name" style="display: block; font-size: 1.1rem;">Name:</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
             </div>
-        </div>
-        <!-- Add more projects here -->
+            <div style="margin-bottom: 20px; text-align: left;">
+                <label for="email" style="display: block; font-size: 1.1rem;">Email:</label>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div style="margin-bottom: 20px; text-align: left;">
+                <label for="message" style="display: block; font-size: 1.1rem;">Message:</label>
+                <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+            </div>
+            <button type="submit" style="background-color: #333; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 1.1rem; border-radius: 5px;">
+                Send Message
+            </button>
+        </form>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>I'm always open to new opportunities, collaborations, and projects. Feel free to reach out to me!</p>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>Phone: [Your Phone Number]</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile/" target="_blank">LinkedIn Profile</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    <!-- Footer Section -->
+    <footer style="background-color: #333; color: white; padding: 20px 0; text-align: center;">
+        <p style="font-size: 1rem; margin: 0;">&copy; 2024 My Portfolio</p>
     </footer>
 
 </body>
